@@ -7,7 +7,40 @@
 
   <body>
     <!-- write the body here -->
+	<div class="container">
+      <h1>🗳️ Voting Eligibility Check</h1>
 
+      <form id="votingForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter your age"
+            min="1"
+            max="120"
+            autocomplete="age"
+          />
+        </div>
+
+        <button type="submit" id="btn">Check Eligibility</button>
+
+        <div class="form-info">
+          📋 Fill in your details to check if you're eligible to vote. You must
+          be 18 or older to vote.
+        </div>
+      </form>
+    </div>
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
